@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest{
             LoginPage loginPage = new LoginPage(driver);
 
             loginPage.enterEmail("testemail@gmail.com"); //that also not a actual one using actual email & password get true result.
-            loginPage.enterPassword("123");
+            loginPage.enterPassword("123@@AA");
             loginPage.clickLogin();
             Thread.sleep(5000);
             String divXPath = "//div[contains(@class, 'x1n2onr6') and contains(@aria-label, 'Messenger')]";
