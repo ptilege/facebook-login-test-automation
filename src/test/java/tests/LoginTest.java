@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest{
             driver.get("https://www.facebook.com");
             LoginPage loginPage = new LoginPage(driver);
 
-            loginPage.enterEmail("testemail@mailinator.com"); //that also not a actual one using actual email & password get true result.
+            loginPage.enterEmail("testemail@gmail.com"); //that also not a actual one using actual email & password get true result.
             loginPage.enterPassword("123");
             loginPage.clickLogin();
             Thread.sleep(5000);
