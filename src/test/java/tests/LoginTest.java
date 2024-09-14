@@ -46,6 +46,7 @@ public class LoginTest extends BaseTest{
 
     @Test
     public void testInvalidLoginRedirection() throws InterruptedException {
+
         driver.get("https://www.facebook.com");
         LoginPage loginPage = new LoginPage(driver);
 
@@ -53,7 +54,7 @@ public class LoginTest extends BaseTest{
         loginPage.enterPassword("wrongPassword123");
         loginPage.clickLogin();
 
-//        Thread.sleep(5000);  // Wait for redirection
+
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
